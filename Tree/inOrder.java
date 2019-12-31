@@ -37,7 +37,6 @@ class Node {
             }
             if(!stack.isEmpty()){
                root = stack.pop();
-               root = queue.poll();
                res.add(root.data);
                root = root.right;
             } 
