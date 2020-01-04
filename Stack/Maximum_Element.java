@@ -7,7 +7,7 @@ public class Solution {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
 
 
-Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         Stack<Integer> stack = new Stack<Integer>();
         Stack<Integer> maxStack = new Stack<Integer>();
