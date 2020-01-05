@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-
+//use BufferReader to effiency the program, use scanner will not pass all testcases due to timeout 
 public class Solution {
     public static void main(String[] args) throws IOException {
         editor();
