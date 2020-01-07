@@ -33,6 +33,7 @@ public class Solution {
             case "4":
                 operations.pop();
                 str = operations.peek();
+                //keep every modify string in the stack!!!
             default:
                 break;
             }
