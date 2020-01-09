@@ -23,7 +23,6 @@ class Solution {
 	*/
 	public static int height(Node root) {
       	// Write your code here.
-        List<Integer> res = new ArrayList<Integer>();
         Queue<Node> queue = new LinkedList<Node>();
         while(root==null){
             return 0;
