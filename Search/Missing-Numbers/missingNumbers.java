@@ -30,6 +30,29 @@ public class Solution {
                 resList.add(entry.getKey());
             }
         }
+        /*
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+        System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue()); }
+        
+        
+        //遍历map中的键
+        for (Integer key : map.keySet()) {
+        System.out.println("Key = " + key);}
+ 
+        //遍历map中的值
+        for (Integer value : map.values()) {
+        System.out.println("Value = " + value);}
+
+
+
+        
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        Iterator<Map.Entry<Integer, Integer>> entries = map.entrySet().iterator();
+        while (entries.hasNext()) {
+        Map.Entry<Integer, Integer> entry = entries.next();
+        System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());}
+        */
         int n = resList.size();
         int[] res = new int[n];
         for(int i=0;i<n;i++) {
