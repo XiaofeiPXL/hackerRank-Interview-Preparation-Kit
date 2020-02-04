@@ -1,0 +1,6 @@
+This problem need to consider three points:
+(1) P
+(2) Q
+(3) points which in arr[i] and arr[i+1]
+(4) (if arr[i]+arr[i+1])%2==0, should consider one more point which is (arr[i]+arr[i+1])/2+1
+(5) don't go through all all points in range[p-q], will cause time out problem!
