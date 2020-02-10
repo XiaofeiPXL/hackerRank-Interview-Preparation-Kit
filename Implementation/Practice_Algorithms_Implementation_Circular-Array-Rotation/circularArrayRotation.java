@@ -14,7 +14,8 @@ public class Solution {
          int n = a.length;
          int[] rotate = new int[n];
          for(int i=0;i<a.length;i++){
-            rotate[(i+k)%n] = a[i];
+            rotate[(i+k)%n] = a[i]; // rotate right;
+            //rotate[(i+n-k)%n] = a[i] rotate left;
          }
          int[] res = new int[queries.length];
          for(int i=0;i<queries.length;i++){
