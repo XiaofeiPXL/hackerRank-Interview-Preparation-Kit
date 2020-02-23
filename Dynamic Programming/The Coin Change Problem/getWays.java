@@ -39,6 +39,30 @@ class Result {
                    arr[i][j] = arr[i-1][j] + 
                    (c.get(i-1)<=j?arr[i][(int) (j-c.get(i-1))]:0);
                 */
+                
+                /*
+                optimize the space complexity:
+                public static long getWays(int n, List<Long> c) 
+                {
+		        // Write your code here
+                int  length = c.size();
+                long[] arr = new long[251];
+                Arrays.fill(arr, 0);
+                arr[0] =1;
+        
+                for(int i=1;i<=length;i++) 
+                {
+        	       for(int j=0;j<=n;j++) 
+                   {
+        		       if(j>=c.get(i-1)) 
+                       {
+        			     arr[j] +=arr[(int) (j-c.get(i-1))];
+        		       }  
+        	       }
+                }
+                    return arr[n];
+	            }
+                */
             }
         }
         return arr[length][n];
