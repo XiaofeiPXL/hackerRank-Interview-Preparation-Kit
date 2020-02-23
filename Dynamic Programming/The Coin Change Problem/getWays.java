@@ -34,6 +34,11 @@ class Result {
                 for(int k=0;k*c.get(i-1)<=j;k++) {
                     arr[i][j] += arr[i-1][(int) (j-k*c.get(i-1))];
                 }
+                /*
+                   line 33-36 can change to:
+                   arr[i][j] = arr[i-1][j] + 
+                   (c.get(i-1)<=j?arr[i][(int) (j-c.get(i-1))]:0);
+                */
             }
         }
         return arr[length][n];
